@@ -6,19 +6,19 @@ import (
 )
 
 var (
-  logger *config.Logger
+	logger *config.Logger
 )
 
 func main() {
-  logger = config.GetLogger("main")
+	logger = config.GetLogger("main")
 	//Initialize config
-  err := config.Init()
-  if err != nil {
-    logger.Errorf("config initialization error: %v", err)
-    return
-  }
+	err := config.Init()
+	if err != nil {
+		logger.Errorf("config initialization error: %v", err)
+		return
+	}
 
-  //Initialize route
+	//Initialize route
 	router.Initializer()
 
-} 
+}
