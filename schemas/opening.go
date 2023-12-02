@@ -1,7 +1,9 @@
 package schemas
 
+import "gorm.io/gorm"
+
 type Opening struct {
-	//gorm.Model
+	gorm.Model
 	Role     string
 	Company  string
 	Location string
