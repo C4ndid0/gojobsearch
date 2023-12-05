@@ -5,8 +5,12 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+
+
 func initializeRoutes(router *gin.Engine) {
-	v1 := router.Group("/api/v1")
+  //Initialize Handler
+  handler.InitializeHandler()
+  v1 := router.Group("/api/v1")
 
 	{
 
