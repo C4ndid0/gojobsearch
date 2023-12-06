@@ -1,12 +1,11 @@
 package router
 
 import (
+	docs "github.com/C4ndid0/gojobsearh/docs"
+	"github.com/C4ndid0/gojobsearh/handler"
 	"github.com/gin-gonic/gin"
 	swaggerfiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
-
-	docs "github.com/C4ndid0/gojobsearh/docs"
-	"github.com/C4ndid0/gojobsearh/handler"
 )
 
 func initializeRoutes(router *gin.Engine) {

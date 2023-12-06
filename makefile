@@ -1,6 +1,6 @@
 .PHONY: default run build test docs clean
 # Variables
-APP_NAME=gopportunities
+APP_NAME=gojobsearh
 
 # Tasks
 default: run-with-docs
