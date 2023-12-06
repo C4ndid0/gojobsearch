@@ -1,7 +1,7 @@
 package router
 
 import (
-	docs "github.com/C4ndid0/gojobsearh/docs"
+	"github.com/C4ndid0/gojobsearh/docs"
 	"github.com/C4ndid0/gojobsearh/handler"
 	"github.com/gin-gonic/gin"
 	swaggerfiles "github.com/swaggo/files"
@@ -21,10 +21,9 @@ func initializeRoutes(router *gin.Engine) {
 		v1.POST("/opening", handler.CreateOpeningHandler)
 		v1.PUT("/opening", handler.UpdateOpeningHandler)
 		v1.DELETE("/opening", handler.DeleteOpeningHandler)
-		v1.GET("/openings", handler.ListOpeningHandler)
+		v1.GET("/openings", handler.ListOpeningsHandler)
 
 	}
 
-	// Initialize swaggo
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
 }
