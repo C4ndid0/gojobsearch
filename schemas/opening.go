@@ -13,7 +13,7 @@ type Opening struct {
 	Location string
 	Remote   bool
 	Link     string
-	Salary   int
+	Salary   int64
 }
 
 type OpeningResponse struct {
